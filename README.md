@@ -1,5 +1,5 @@
 Flutter TikTok UI Clone Project
-<img src="https://github.com/birukbr7/TiktokCloneByBirukBr7/assets/106627959/c9a997eb-4632-492b-9156-be9baba7ac97" alt="Screenshot 1" width="400"> <img src="https://github.com/birukbr7/TiktokCloneByBirukBr7/assets/106627959/ff3fa67d-e95b-4f3d-a481-774260ddb83b" alt="Screenshot 2" width="400">
+<img src="https://github.com/birukbr7/TiktokCloneByBirukBr7/assets/106627959/c9a997eb-4632-492b-9156-be9baba7ac97" alt="Screenshot 1" width="200"> <img src="https://github.com/birukbr7/TiktokCloneByBirukBr7/assets/106627959/ff3fa67d-e95b-4f3d-a481-774260ddb83b" alt="Screenshot 2" width="200">
 
 
 Overview
