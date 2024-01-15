@@ -24,10 +24,6 @@ class _MainPageState extends State<MainPage> {
   ];
   @override
   Widget build(BuildContext context) {
-    bool isDark =
-        (_currentIndex == 0 || _currentIndex == 2 || _currentIndex == 3)
-            ? true
-            : false;
     return Scaffold(
       body: tabs[_currentIndex],
       bottomNavigationBar: Theme(

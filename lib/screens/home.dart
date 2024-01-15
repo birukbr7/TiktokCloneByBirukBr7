@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:tiktokclone/widgets/video_overlay.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -53,41 +53,7 @@ class _HomeState extends State<Home> {
         ),
       ),
       backgroundColor: Colors.black,
-      body: const Stack(
-        children: [
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Center(
-                child: Icon(
-                  Icons.play_arrow_sharp,
-                  color: Colors.white60,
-                  size: 80,
-                ),
-              ),
-            ],
-          ),
-          Positioned(
-              bottom: 0,
-              right: 0,
-              child: Column(
-                children: [
-                  Icon(
-                    Icons.favorite_rounded,
-                    color: Colors.red,
-                  ),
-                  Icon(
-                    Icons.favorite_rounded,
-                    color: Colors.red,
-                  ),
-                  Icon(
-                    FontAwesomeIcons.share,
-                    color: Colors.red,
-                  )
-                ],
-              ))
-        ],
-      ),
+      body: const VideoOverlay(),
     );
   }
 }
