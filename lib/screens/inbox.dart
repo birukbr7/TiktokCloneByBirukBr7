@@ -1,4 +1,4 @@
-import 'package:faker/faker.dart';
+import 'package:faker/faker.dart' as faker;
 
 import 'package:flutter/material.dart';
 import 'package:tiktokclone/widgets/inbox_widget/activity_status.dart';
@@ -13,7 +13,7 @@ class InboxPage extends StatefulWidget {
 }
 
 class _InboxPageState extends State<InboxPage> {
-  final randomName = Faker().person.firstName();
+  final randomName = faker.Faker().person.firstName();
 
   @override
   Widget build(BuildContext context) {

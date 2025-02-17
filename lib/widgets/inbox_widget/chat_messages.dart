@@ -1,6 +1,6 @@
 import 'dart:math';
 
-import 'package:faker/faker.dart';
+import 'package:faker/faker.dart' as faker;
 import 'package:flutter/material.dart';
 
 class ChatMessages extends StatelessWidget {
@@ -10,7 +10,7 @@ class ChatMessages extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final randomName = Faker().person.firstName();
+    final randomName = faker.Faker().person.firstName();
     return ListTile(
       leading: CircleAvatar(
         radius: 35,
