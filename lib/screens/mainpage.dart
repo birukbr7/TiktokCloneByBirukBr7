@@ -14,14 +14,11 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
   int _currentIndex = 0;
+  Color bgcolor = Colors.black;
+  Color selectedItemColor = Colors.white;
+  Color unselectedItemColor = Colors.white.withOpacity(.60);
 
-  final tabs = const [
-    Home(),
-    FriendsPage(),
-    PostPage(),
-    InboxPage(),
-    Profile()
-  ];
+  final tabs = [Home(), FriendsPage(), PostPage(), InboxPage(), Profile()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,13 +32,24 @@ class _MainPageState extends State<MainPage> {
           elevation: 0,
           currentIndex: _currentIndex,
           type: BottomNavigationBarType.fixed,
-          backgroundColor: Colors.black,
-          selectedItemColor: Colors.white,
-          unselectedItemColor: Colors.white.withOpacity(.60),
+          backgroundColor: bgcolor,
+          selectedItemColor: selectedItemColor,
+          unselectedItemColor: unselectedItemColor,
           selectedFontSize: 14,
           unselectedFontSize: 14,
           onTap: (value) {
-            setState(() => _currentIndex = value);
+            setState(() {
+              _currentIndex = value;
+              if (_currentIndex == 3 || _currentIndex == 4) {
+                bgcolor = Colors.white;
+                selectedItemColor = Colors.black;
+                unselectedItemColor = Colors.black.withOpacity(.60);
+              } else {
+                bgcolor = Colors.black;
+                selectedItemColor = Colors.white;
+                unselectedItemColor = Colors.white.withOpacity(.60);
+              }
+            });
           },
           items: [
             const BottomNavigationBarItem(

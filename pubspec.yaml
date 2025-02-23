@@ -86,6 +86,10 @@ flutter:
     - images/br7logo.png
     - images/plus.png
     - images/biruk.jpg
+    - videos/1.mp4
+    - videos/2.mp4
+    - videos/3.mp4
+    - videos/4.mp4
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tiktokclone/screens/videos.dart';
 import 'package:tiktokclone/widgets/video_overlay.dart';
 
 class FriendsPage extends StatelessWidget {
@@ -35,7 +36,7 @@ class FriendsPage extends StatelessWidget {
           ),
         ),
       ),
-      body: const VideoOverlay(
+      body: const Videos(
         isFollwoing: true,
       ),
     );

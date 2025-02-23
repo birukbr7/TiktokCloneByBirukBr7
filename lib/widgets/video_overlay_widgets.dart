@@ -63,8 +63,10 @@ class ProfilePicWithFollowButton extends StatelessWidget {
           CircleAvatar(
             radius: 27,
             backgroundColor: Colors.white,
-            backgroundImage: AssetImage(
-                isFollwoing ? 'images/biruk.jpg' : 'images/br7logo.png'),
+            backgroundImage: !isFollwoing
+                ? NetworkImage(
+                    'https://picsum.photos/200?random=${Random().nextInt(1000)}')
+                : const AssetImage('images/br7logo.png') as ImageProvider,
           ),
           isFollwoing
               ? const SizedBox()
